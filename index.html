@@ -11,17 +11,20 @@
     </svg>
     <!--<input style="width:500;height:30;font-size:1.2em" onInput=""/>-->
     <script>
-      var sites = [];
-        /*[0,0],
+      var sites = [
+        [0,0],
         [1,0],
         [0,1],
-        [1,1]
-      ];*/
+        [1,1],
+        [1,0.5]
+      ];
+      /*
       for(var i=0;i<10;i++){
         sites.push( [Math.random(),Math.random()] );
       }
+      */
       initializeTerminals(sites);
-      setKVector([0,0,0,0,0,0,0]);
+      setKVector([1,3]);
       tolerance = 0.001;
     </script>
     <script src="visualize.js" charset="utf-8"></script>
